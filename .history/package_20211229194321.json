@@ -1,0 +1,23 @@
+{
+  "name": "stickman2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@stencil/core": "^2.12.0",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stickman407/Stickman2.git"
+  },
+  "author": "Stickman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stickman407/Stickman2/issues"
+  },
+  "homepage": "https://github.com/Stickman407/Stickman2#readme"
+}
