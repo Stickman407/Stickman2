@@ -6,32 +6,45 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface StickMan {
+    interface MapEditor {
+    }
+    interface StickTank {
     }
 }
 declare global {
-    interface HTMLStickManElement extends Components.StickMan, HTMLStencilElement {
+    interface HTMLMapEditorElement extends Components.MapEditor, HTMLStencilElement {
     }
-    var HTMLStickManElement: {
-        prototype: HTMLStickManElement;
-        new (): HTMLStickManElement;
+    var HTMLMapEditorElement: {
+        prototype: HTMLMapEditorElement;
+        new (): HTMLMapEditorElement;
+    };
+    interface HTMLStickTankElement extends Components.StickTank, HTMLStencilElement {
+    }
+    var HTMLStickTankElement: {
+        prototype: HTMLStickTankElement;
+        new (): HTMLStickTankElement;
     };
     interface HTMLElementTagNameMap {
-        "stick-man": HTMLStickManElement;
+        "map-editor": HTMLMapEditorElement;
+        "stick-tank": HTMLStickTankElement;
     }
 }
 declare namespace LocalJSX {
-    interface StickMan {
+    interface MapEditor {
+    }
+    interface StickTank {
     }
     interface IntrinsicElements {
-        "stick-man": StickMan;
+        "map-editor": MapEditor;
+        "stick-tank": StickTank;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "stick-man": LocalJSX.StickMan & JSXBase.HTMLAttributes<HTMLStickManElement>;
+            "map-editor": LocalJSX.MapEditor & JSXBase.HTMLAttributes<HTMLMapEditorElement>;
+            "stick-tank": LocalJSX.StickTank & JSXBase.HTMLAttributes<HTMLStickTankElement>;
         }
     }
 }

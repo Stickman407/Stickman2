@@ -1,4 +1,4 @@
-import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-6227b3ed.js';
+import { B as BUILD, c as consoleDevInfo, p as plt, w as win, H, d as doc, N as NAMESPACE, a as promiseResolve, b as bootstrapLazy } from './index-7ba56883.js';
 import { g as globalScripts } from './app-globals-0f993ce5.js';
 
 /*
@@ -121,5 +121,5 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(options => {
   globalScripts();
-  return bootstrapLazy([["stick-man",[[0,"stick-man"]]]], options);
+  return bootstrapLazy([["stick-tank",[[0,"stick-tank",{"x":[32],"y":[32]},[[16,"keydown","onKeydown"]]]]],["map-editor",[[0,"map-editor"]]]], options);
 });
