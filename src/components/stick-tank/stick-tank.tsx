@@ -57,7 +57,7 @@ export class StickTank {
   }
   render() {
     return (
-      <span>
+      <span
         ref={(el) => this.el = el} style={{
         position: "absolute",
         transition: "0.3s linear all",
@@ -66,7 +66,7 @@ export class StickTank {
         width: "60px",
         left: `${this.x}px`,
         top: `${this.y}px`
-      }}</span>
+      }}/>
     );
   }
 

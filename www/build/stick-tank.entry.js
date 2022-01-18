@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-7ba56883.js';
+import { r as registerInstance, h } from './index-fedadd70.js';
 
 const stickTankCss = ":host{display:block}";
 
@@ -53,15 +53,15 @@ let StickTank = class {
     document.body.append(bulletEl);
   }
   render() {
-    return (h("span", null, "ref=", (el) => this.el = el, " style=", {
-      position: "absolute",
-      transition: "0.3s linear all",
-      background: "url('https://forum.cosmoteer.net/assets/files/2020-03-07/1583581655-976459-alien-tank-1.gif') center center / contain no-repeat",
-      height: "60px",
-      width: "60px",
-      left: `${this.x}px`,
-      top: `${this.y}px`
-    }));
+    return (h("span", { ref: (el) => this.el = el, style: {
+        position: "absolute",
+        transition: "0.3s linear all",
+        background: "url('https://forum.cosmoteer.net/assets/files/2020-03-07/1583581655-976459-alien-tank-1.gif') center center / contain no-repeat",
+        height: "60px",
+        width: "60px",
+        left: `${this.x}px`,
+        top: `${this.y}px`
+      } }));
   }
 };
 StickTank.style = stickTankCss;

@@ -1,5 +1,5 @@
 import { Component, h,} from '@stencil/core';
-import Tank from './models/Tank';
+//import Tank from './models/Tank';
 @Component({
     tag: 'map-editor',
     styleUrl: 'map-editor.css'
@@ -8,7 +8,7 @@ export class Stickman {
     componentDidLoad() {
         // new Tank();
         setInterval(() => {
-            this.gameLoop();
+            //this.gameLoop();
         } , 1000 / 60);
       } 
 
