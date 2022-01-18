@@ -9,6 +9,7 @@
     "workbox-build": "^4.3.1"
   },
   "scripts": {
+    "deploy": "firebase deploy --only hosting",
     "build": "stencil build --prod",
     "g": "stencil generate",
     "start": "stencil build --dev --serve --watch",
